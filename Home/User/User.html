@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="User.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+
+  <title>User</title>
+</head>
+
+<body>
+  <button class="create-order-btn btn btn-success" id="createOrderButton">Create Your Order</button>
+
+  <!-- Button to trigger the modal -->
+  <!-- <button type="button" id="viewOrderButton" class="btn btn-primary">View Order</button> -->
+
+  <!-- Modal -->
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    id="viewOrderButton">
+    View Order
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center ms-auto" id="exampleModalLabel">Order History</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div id="orderContainer"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<p id="json"></p>
+
+  <!-- Rest of your HTML code -->
+  <section id="orderSection" style="display: none;">
+
+  </section>
+
+
+
+  <div class="main-filter">
+    <div id="filterButtons">
+      <button id="filterByPriceButton" class="btn btn-secondary">Sort by Price (Low to High)</button>
+      <select id="foodTypeFilter" class="form-select">
+        <option value="">All Food Types</option>
+        <option value="Punjabi">Punjabi</option>
+        <option value="Chinese">Chinese</option>
+        <option value="South Indian">South Indian</option>
+      </select>
+    </div>
+  </div>
+  <button id="placeOrderButton" class="btn btn-primary">Place Order</button>
+  <div id="hotelCardsContainer" class="row"></div>
+  <div id="noDataMessage" >data not matched</div>
+
+</body>
+<script src="User.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+</html>

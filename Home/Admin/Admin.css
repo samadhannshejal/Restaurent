@@ -1,0 +1,38 @@
+.selectedInput{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card {
+    height: 100%;
+    /* background-color: #4CAF50; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 0px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;  }
+  
+  .custom-card-header {
+    background-color: #343a40; /* Replace with your desired color */
+    color: #fff; /* Set text color to ensure readability */
+    text-align: center; /* Center-align the text */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .card-body {
+    padding: 1rem; /* Add padding to the card body */
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa; /* Replace with your desired color */
+  }
+  
+  .list-group-item.font-weight-bold {
+    background-color: #343a40; /* Replace with your desired color */
+    color: #fff; /* Set text color to ensure readability */
+  }
+  
+  
+  .list-group {
+    margin-bottom: 0;
+  }
+  #orderContainer{
+    margin: 20px;
+  }
